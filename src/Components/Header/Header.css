@@ -1,0 +1,73 @@
+.site-header {
+	padding-top: 41px;
+	padding-bottom: 19px;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo__img {
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.site-header__list {
+  display: none;
+}
+
+
+.site-logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-user {
+  text-decoration: none;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.site-header__toggler {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url('../../Assets/Image/menu.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  
+  .site-header__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .site-header__item:not(last-child) {
+    margin-left: 70px;
+  }
+
+  .site-header__link {
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #ffffff;
+  }
+}
